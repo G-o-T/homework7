@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.h1 {
+  margin: 120px 0 70px;
+  color: tomato;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 48;
+  text-align: center;
+}
+
+.img-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, 130px);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
